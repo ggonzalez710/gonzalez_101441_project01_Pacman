@@ -4,7 +4,10 @@
 My game is the classic arcade game 'Pacman'. To win you must eat all of the food (white dots) inside the map; you lose if one of the red circles eat you.
 
 # Main Algorithm Explanation
-The main algorithm of the game takes place in the function 'moveCharacters'. This function receives 6 parameters:
+<br>The main algorithm of the game takes place in the function 'runGame'. Function 'runGame' first draws the map, pacman's food, pacman and the ghosts.
+It then enters a while loop where a function called 'moveCharacters' is continually called 4 times in a row (since there are 4 ghosts).  
+
+<br>The function 'moveCharacters' receives 6 parameters:
 <br>Parameter 1: A circle object named gh; this object is the 'ghost' that chases pacman
 <br>Parameter 2: The window where the game is taking place
 <br>Parameter 3: A circle object named pac; this object is pacman
@@ -24,6 +27,3 @@ a boundary of the map or it encounters an opening to go through. Next in the whi
 'checkLost' is called, followed by a function call to 'handleKey'; function 'handleKey' is called to handle the player's entered key and move the pacman.
 After calling 'handleKey', the function 'eatFood' is called to check if pacman ate one of the foods, and if so, then the score is updated; inside 'eatFood', 
 the function 'checkWin' is called to check if a player ate all of map's food and won the game.
-
-<br>Function 'moveCharacters' is called continually in a while loop that is placed inside the function 'runGame'. Function 'runGame' first draws the map,
-pacman's food, pacman and the ghosts, and it then enters the while loop where 'moveCharacters' is continually called 4 times in a row (since there are 4 ghosts). 
