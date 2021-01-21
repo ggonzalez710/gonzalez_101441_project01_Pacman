@@ -5,8 +5,8 @@ My game is the classic arcade game 'Pacman'. To win you must eat all of the food
 
 # Main Algorithm Explanation
 The main algorithm of the game takes place in the function 'moveCharacters'. This function receives 6 parameters:
-    Parameter 1: A circle object named gh; this object is the 'ghost' that chases pacman
-    Parameter 2: The window where the game is taking place
+<br>Parameter 1: A circle object named gh; this object is the 'ghost' that chases pacman
+<br>Parameter 2: The window where the game is taking place
     Parameter 3: A circle object named pac; this object is pacman
     Parameter 4: A text object named scoreNum_Label; this is the label that shows the player's current score number
     Parameter 5: An integer variable named scoreNumber; this variable holds the number for the player's current score
