@@ -12,7 +12,7 @@ The main algorithm of the game takes place in the function 'moveCharacters'. Thi
 <br>Parameter 5: An integer variable named scoreNumber; this variable holds the number for the player's current score
 <br>Parameter 6: An array called food where pacman's food (white circles) is stored.
     
-<br><br>The function begins with a function call to 'boundaries'. This function takes either a ghost's or pacman's current location and sets the object's boundaries
+<br>The function begins with a function call to 'boundaries'. This function takes either a ghost's or pacman's current location and sets the object's boundaries
 depending on what rectangle of the map the object is at. It returns 4 flags (keepGoingRight, keepGoingLeft, keepGoingUp, keepGoingDown) that indicate in
 which directions the object can move.
 
