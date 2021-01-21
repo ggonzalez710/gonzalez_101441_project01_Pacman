@@ -15,7 +15,7 @@ It then enters a while loop where a function called 'moveCharacters' is continua
 <br>Parameter 5: An integer variable named scoreNumber; this variable holds the number for the player's current score
 <br>Parameter 6: An array called food where pacman's food (white circles) is stored.
     
-<br>The function begins with a function call to 'boundaries'. This function takes either a ghost's or pacman's current location and sets the object's boundaries
+<br>Function 'moveCharacters' begins with a function call to 'boundaries'. This function takes either a ghost's or pacman's current location and sets the object's boundaries
 depending on what rectangle of the map the object is at. It returns 4 flags (keepGoingRight, keepGoingLeft, keepGoingUp, keepGoingDown) that indicate in
 which directions the object can move.
 
