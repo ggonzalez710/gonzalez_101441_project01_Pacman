@@ -26,4 +26,4 @@ are checked again and a while loop is executed (if the movement flag is true) so
 a boundary of the map or it encounters an opening to go through. Next in the while loop, the ghost is instructed to move and after each movement the function 
 'checkLost' is called, followed by a function call to 'handleKey'; function 'handleKey' is called to handle the player's entered key and move the pacman.
 After calling 'handleKey', the function 'eatFood' is called to check if pacman ate one of the foods, and if so, then the score is updated; inside 'eatFood', 
-the function 'checkWin' is called to check if a player ate all of map's food and won the game.
+the function 'checkWinner' is called to check if a player ate all of map's food and won the game.
