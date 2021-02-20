@@ -1,29 +1,3 @@
-"""
-This program has 14 functions. Here they are in order of appearance:
-
-mainMenu():                         # Main menu of the game; start option and exit option
-runGame():                          # Function that starts and runs the game
-pacman(window):                     # Create the pacman
-ghosts(window):                     # Create the ghosts
-boundaries(obj, window):            # This function sets the boundaries of the map for the formal parameter 'obj'
-                                    # 4 flags are returned; they indicate whether the object can or cannot move
-                                    # in a specific direction
-moveCharacters(gh, window, pac, scoreNum_Label, scoreNumber, food):     # This function moves the characters of the game
-                                                                        # Pacman's movement depends on the keys pressed by user
-                                                                        # The ghosts' movement is set randomly depending on
-                                                                        # their current positions
-self.checkLost():         # Checks if one of the ghosts touched pacman
-
-handleKey(k, pac, window, gh):      # This function handles pacman's movement depending on the flags returned by function 'boundaries'
-                                    # and the key pressed by the player
-pacFood(window):                    # Creates the food that pacman eats
-eatFood(pac, scoreNum_Label, scoreNumber, window, food):    # Handles the eaten food
-updateScore(num, window):           # Updates the score
-checkWinner(score, window):         # Checks if a player won by eating all foods
-winner(window):                     # Output if player wins
-loser(window):                      # Output if player loses
-"""
-
 from graphics import *
 from gamemap import Map
 from interfaces import Interface
